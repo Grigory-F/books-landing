@@ -1,0 +1,30 @@
+.advantage-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 430px;
+    margin: 0 auto;
+    gap: 20px;
+    &__inner-image {
+        height: 65px;
+        display: flex;
+        align-items: center;
+    }
+    &__image {
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .advantage-block {
+        flex-direction: row;
+        align-items: flex-start;
+        &__inner-image {
+            
+        }
+        &__image {
+        }
+    }
+}

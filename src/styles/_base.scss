@@ -1,0 +1,173 @@
+@import "components/news";
+@import "components/reviews";
+@import "components/advantage";
+@import "components/description";
+@import "components/form-news";
+@import "components/top-section";
+@import "components/books";
+@import "components/content-book";
+@import "header";
+
+.over-new.active {
+  z-index: 300;
+  background-color: rgba(0,0,0,.7);
+}
+.over-new {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+.float-btn {
+  z-index: 300;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  border-radius: 50%;
+  background-color: #8b0f1a;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  & div {
+    margin: auto;
+  }
+}
+.button-cart {
+  position: relative;
+
+  & svg {
+    
+  }
+  & span {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .button-cart {
+    position: relative;
+  
+    & svg {
+      
+    }
+    & span {
+      
+      width: 24px;
+      height: 24px;
+      font-size: 12px;
+    }
+  }
+}
+
+.layout-normalize {
+  padding: 0 30px !important;
+}
+
+@media (max-width: 992px) {
+  .layout-normalize {
+    padding: 0 20px !important;
+  }
+}
+
+.slider-box-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.slider-btn-prev,
+.slider-btn-next {
+  width: 45px;
+  height: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.2s ease;
+  & svg {
+    position: absolute;
+    top: 50%;
+    color: #8b0f1a;
+    transform: translateY(-50%);
+  }
+}
+
+.slider-btn-prev.swiper-button-disabled,
+.slider-btn-next.swiper-button-disabled {
+  width: 30px;
+  transition: 0.2s ease;
+}
+.slider-btn-prev.swiper-button-disabled {
+  & svg {
+    color: #383838;
+  }
+}
+.slider-btn-next.swiper-button-disabled {
+  & svg {
+    color: #383838;
+  }
+}
+.slider-btn-prev {
+  & svg {
+    left: 0;
+  }
+}
+.slider-btn-next {
+  & svg {
+    right: 0;
+  }
+}
+
+.tabs-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  &__btn {
+    padding: 3px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  &__btn.tabs__btn--active {
+    background-color: #f2f2f2;
+  }
+}
+
+.controls-value {
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  display: flex;
+  height: 35px;
+  font-size: 15px;
+  align-items: center;
+  &__btn {
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    font-size: 24px;
+    width: 35px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__btn--decrem {
+  }
+  &__btn--increm {
+  }
+  &__value {
+    padding: 0 15px;
+  }
+}

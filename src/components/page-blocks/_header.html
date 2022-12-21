@@ -1,0 +1,42 @@
+<header class="header py-10 py-md-15 ff-1 bg-block">
+  <div class="container d-flex align-items-center justify-content-between">
+    <div class="burger-button d-xxl-none">
+      @@include('../page-blocks/_sprite.html', {'id': 'iconburger', 'width':
+                    '32px', 'height': '32px'})
+    </div>
+    <a href="#" class="d-block">
+      <img class="header__logo" src="img/logo.svg" alt="" />
+    </a>
+    <div class="button-cart text-dark d-xxl-none">
+      <span>1</span>
+      @@include('../page-blocks/_sprite.html', {'id': 'cart', 'width':
+            '26px', 'height': '35px'})
+      </div>
+    <nav class="header-nav">
+      <div class="header-nav__btn-close mb-30 burger-button-close">
+      <img src="img/lines.svg" alt="">
+                  </div>
+      <ul class="header-nav__list-link">
+        <li class="header-nav__item-link">
+          <a href="#method" class="header-nav__link">Идеал-метод Тойча</a>
+        </li>
+        <li class="header-nav__item-link">
+          <a href="#books" class="header-nav__link">Книги</a>
+        </li>
+        <li class="header-nav__item-link">
+          <a href="#" class="header-nav__link">Что внутри</a>
+        </li>
+        <li class="header-nav__item-link ">
+          <a href="#reviews" class="header-nav__link">Отзывы</a>
+        </li>
+        <li class="header-nav__item-link">
+          <a href="#news" class="header-nav__link">Новости</a>
+        </li>
+        <li class="header-nav__item-link">
+          <a href="#contacts" class="header-nav__link">Контакты</a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</header>

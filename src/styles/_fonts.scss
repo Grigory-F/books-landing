@@ -1,0 +1,19 @@
+
+@font-face {
+  font-family: "Geometria";
+  font-weight: 400;
+  src: local("Geometria-Regular"),
+    url("../fonts/Geometria-Regular.woff2") format("woff2"),
+    url("../fonts/Geometria-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair-Display";
+  font-weight: 400;
+  src: local("Playfair-Display-Regular"),
+    url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/PlayfairDisplay-Regular.woff") format("woff");
+  font-display: swap;
+}
+

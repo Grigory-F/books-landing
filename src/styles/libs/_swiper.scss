@@ -1,0 +1,34 @@
+@import "../../node_modules/swiper/swiper.scss";
+
+.swiper-slide {
+  height: auto !important;
+}
+/* .swiper-slider .swiper-slide:nth-child(1) {
+  margin-left: 30px;
+} */
+.reuse-slider-pagination {
+  display: flex;
+  gap: 10px;
+  & a {
+    padding: 2px 10px;
+    display: block;
+  }
+  & a.swiper-pagination-bullet-active {
+    background-color: $primary;
+    color: white;
+  }
+}
+
+
+.slider-custom-pag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  &__prev {
+  }
+  &__pag {
+  }
+  &__next {
+  }
+}

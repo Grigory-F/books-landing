@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ru",
+"title":"New Agelar ",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+@@include('components/page-blocks/_header.html')
+		<main class="main">
+			<div class="over-new"></div>
+			<div class="float-btn">
+				<div class="button-cart text-white">
+					<span>1</span>
+					@@include('components/page-blocks/_sprite.html', {'id': 'cart', 'width':
+							  '30px', 'height': '40px'})
+			  	</div>
+			</div>
+			@@include('components/blocks/_top-section.html')
+			@@include('components/blocks/_advantage.html')
+@@include('components/blocks/_description.html')
+			@@include('components/blocks/_books.html')
+			@@include('components/blocks/_form-news.html')
+			@@include('components/blocks/_content-book.html')
+			@@include('components/blocks/_reviews.html')
+			@@include('components/blocks/_news.html')
+		</main>
+		@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+	@@include('components/page-blocks/_modals.html')
+</body>
+</html>

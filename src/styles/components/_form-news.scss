@@ -1,0 +1,30 @@
+.form-news {
+    display: flex;
+    align-items: center;
+    &__inner-image {
+        width: 55%;gap: 30px;
+    }
+}
+.form-news-block {
+    width: 30%;
+}
+
+
+@media (max-width: 1200px) {
+    .form-news {
+        flex-direction: column;
+        &__inner-image {
+            max-width: 768px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    .form-news-block {
+        max-width: 575px;
+        text-align: center;
+        padding:  0 20px;
+            width: 100%;
+            margin: 0 auto;
+    }
+    
+}
