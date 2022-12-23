@@ -1,7 +1,15 @@
+.tabs-nav-scroll {
+  overflow-x: auto;
+}
+
 .books-card {
   position: relative;
   height: 100%;
+  background-color: white;
   &__visible-cont {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
   &__inner-image {
     /* height: 330px; */
@@ -30,6 +38,16 @@
     flex-direction: column;
     color: white;
     gap: 20px;
+    z-index: -1;
+    transform: scale(0.95);
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+  &__hide-cont--active {
+    transition: 0.3s ease;
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1);
   }
 }
 
@@ -41,17 +59,16 @@
     &__visible-cont {
     }
     &__inner-image {
-      min-height: 200px;
-
       padding: 10px 25px;
 
       & img {
       }
-    }&__scroll-box {
-        height: 210px;
-      }
+    }
+    &__scroll-box {
+      height: 210px;
+    }
     &__hide-cont {
-      padding: 15px 7px;
+      padding: 25px 7px 15px 7px;
     }
   }
 }

@@ -11,6 +11,8 @@
 
 .tabs__pane {
   display: none;
+  position: relative;
+  height: 100%;
 }
 
 .tabs__pane--show {

@@ -1,0 +1,138 @@
+.madal-cart {
+  &__image-select {
+    width: 100px;
+  }
+  &__scroller {
+    max-height: 280px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 10px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 10px;
+      background-color: #8b0f1a;
+      border-radius: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 5px;
+    }
+  }
+  &__inner-img-suggest {
+    width: 65px;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+  }
+  &__img-suggest {
+  }
+  &__scroller-big {
+    max-height: 475px;
+  }
+}
+
+.spec-bordered {
+  border-left: 1px solid #c3c3c3;
+}
+
+.box-price {
+  position: relative;
+  &__current-price {
+    font-size: 48px;
+  }
+  & span {
+    font-size: 24px;
+    right: 0;
+    text-decoration: line-through;
+    color: #c3c3c3;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+}
+@media (max-width: 1200px) {
+  .spec-bordered {
+    border-left: none;
+  }
+}
+@media (max-width: 768px) {
+  .madal-cart {
+    &__image-select {
+      width: 60px;
+    }
+  }
+  .box-price {
+    position: relative;
+    &__current-price {
+      font-size: 24px;
+    }
+    & span {
+      font-size: 16px;
+    }
+  }
+}
+
+.modal-checkbox {
+  cursor: pointer;
+  & > div {
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+    border: 1px solid #383838;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  & input {
+    display: none;
+  }
+  & div svg {
+    display: none;
+  }
+  & input:checked + div {
+    border: 1px solid #8b0f1a;
+  }
+  & input:checked + div svg {
+    display: block;
+  }
+}
+
+.button-cards {
+  width: 100%;
+  background: #231f20;
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  padding: 8px 0;
+  white-space: nowrap;
+  display: flex;
+  & * {
+    margin: 0 auto;
+  }
+  & svg {
+    display: none;
+  }
+  &--active {
+    background: #777777;
+  }
+}
+
+@media (max-width: 992px) {
+  .button-cards {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border-radius: 50%;
+    padding: 0px 0;
+    & span {
+        display: none;
+      }
+    & svg {
+        display: block;
+        color: white;
+        margin: auto;
+      }
+  }
+}

@@ -28,3 +28,16 @@
         }
     }
 }
+
+.advantage .col-lg-4:nth-child(2) {
+    border-right: 1px solid #C3C3C3;
+    border-left: 1px solid #C3C3C3;
+}
+
+
+@media (max-width: 1200px) {
+    .advantage .col-lg-4:nth-child(2) {
+        border-right: none;
+        border-left: none;
+    }
+}

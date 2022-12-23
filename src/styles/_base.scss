@@ -6,11 +6,15 @@
 @import "components/top-section";
 @import "components/books";
 @import "components/content-book";
+@import "components/modal-cart";
 @import "header";
 
+.show-books-desc {
+  cursor: pointer;
+}
 .over-new.active {
   z-index: 300;
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .over-new {
   position: fixed;
@@ -20,7 +24,6 @@
   bottom: 0;
   z-index: -1;
 }
-
 
 .float-btn {
   z-index: 300;
@@ -36,11 +39,11 @@
     margin: auto;
   }
 }
+
 .button-cart {
   position: relative;
 
   & svg {
-    
   }
   & span {
     position: absolute;
@@ -57,23 +60,50 @@
     font-size: 14px;
   }
 }
-
-@media (max-width: 1440px) {
+@media (max-width: 992px) {
+  .float-btn {
+    z-index: 300;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+    background-color: #8b0f1a;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    & div {
+      margin: auto;
+    }
+    & svg {
+      width: 20px !important;
+      height: 30px !important;
+    }
+  }
   .button-cart {
     position: relative;
-  
+
     & svg {
-      
     }
     & span {
-      
-      width: 24px;
-      height: 24px;
+      width: 17px;
+      height: 17px;
       font-size: 12px;
     }
   }
-}
+  @media (max-width: 1440px) {
+    .button-cart {
+      position: relative;
 
+      & svg {
+      }
+      & span {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+      }
+    }
+  }
+}
 .layout-normalize {
   padding: 0 30px !important;
 }
@@ -135,26 +165,61 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   &__btn {
     padding: 3px 15px;
     border-radius: 30px;
     cursor: pointer;
+    white-space: nowrap;
   }
   &__btn.tabs__btn--active {
     background-color: #f2f2f2;
   }
+  &--scroller {
+    justify-content: start;
+    position: relative;
+    &::-webkit-scrollbar {
+      display: none;
+      width: 0 !important;
+      height: 0;
+      
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 55px;
+      background: linear-gradient(
+        270deg,
+        #ffffff 29.23%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+  }
 }
 
 .controls-value {
-  border: 1px solid #ffffff;
+  
   border-radius: 3px;
   display: flex;
   height: 35px;
   font-size: 15px;
   align-items: center;
-  &__btn {
+  &--dark, &--dark &__btn {
+    border: 1px solid #777777;
+    color: #777777;
+  }
+  
+  &--light &__btn, &--light {
     border: 1px solid #ffffff;
+    color: #ffffff;
+  }
+  
+  &__btn {
+    
     border-radius: 3px;
     font-size: 24px;
     width: 35px;

@@ -1,142 +1,1068 @@
 <div
-  class="modal fade"
-  id="modal-map"
+  class="modal fade madal-cart"
+  id="modal-cart"
   tabindex="-1"
-  aria-labelledby="modal-map"
-  aria-hidden="true"
+  aria-labelledby="modal-cart"
+  aria-hidden="false"
 >
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content bg-primary py-30 px-20">
+  <!--  -->
+  <div class="modal-dialog modal-dialog-centered modal-xl mt-50">
+    <div class="modal-content bg-white p-5 p-md-20 position-relative">
       <div
-        type="button"
-        class="btn-close text-white position-absolute"
-        style="top: 15px; right: 15px"
+        style="
+          top: -35px;
+          right: 0;
+          position: absolute;
+          width: 65px;
+          height: 65px;
+          background-color: white;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
         data-bs-dismiss="modal"
         aria-label="Close"
-      ></div>
+      >
+        @@include('../page-blocks/_sprite.html', {'id': 'delete', 'width':
+        '19px', 'height': '19px'})
+      </div>
 
-      <div class="text-center text-white">
-        <p class="fs-lg-special-size text-uppercase mb-20">Обратный звонок</p>
-        <input
-          type="text"
-          class="form-control py-10 px-20 mb-10 btn-outline-primary"
-          placeholder="Введите ваше имя"
-        />
-        <input
-          type="text"
-          class="form-control py-10 px-20 btn-outline-primary"
-          placeholder="Введите ваш телефон"
-        />
-        <span class="text-muted fs-8">Заполните обязательные поля</span>
-        <p >
-            При нажатии на кнопку, Вы даете согласие на обработку Персональных данных.
-        </p>
-        <div class="mt-30 d-flex">
-          <div class="btn btn-light wp-100">Перезвоните мне!</div>
+      <div class="d-flex gap-30">
+        <h3 class="fs-2">Оформление заказа</h3>
+      </div>
+      <div class="mt-10">
+        <div class="madal-cart__scroller">
+          <div>
+            <div class="container mb-5">
+              <div class="row gy-15">
+                <div class="col-xl-6">
+                  <div class="d-flex gap-15 gap-md-30">
+                    <div>
+                      <img
+                        class="madal-cart__image-select"
+                        src="img/shine.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="ff-1">
+                      <p class="fs-6 fs-md-4 ff-2">
+                        Отсюда к великому счастью, или как улучшить Вашу жизнь
+                        навсегда!
+                      </p>
+                      <span class="fs-7 fs-md-6">Авторы:</span>
+                      <div
+                        class="d-flex gap-0 gap-md-15 flex-column flex-md-row fs-6 fs-md-5"
+                      >
+                        <span>Джоэл Мари Тойч</span
+                        ><span>Чемпион Курт Тойч</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-2 col-4 spec-bordered">
+                  <div
+                    class="d-flex justify-content-center align-items-center h-100"
+                  >
+                    <div class="box-price">
+                      <span>600₽</span>
+                      <p class="box-price__current-price">400₽</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-2 col-8 spec-bordered">
+                  <div
+                    class="d-flex justify-content-center align-items-center gap-10 h-100"
+                  >
+                    <div class="controls-value controls-value--dark">
+                      <div
+                        class="controls-value__btn controls-value__btn--decrem"
+                      >
+                        @@include('../page-blocks/_sprite.html', {'id':
+                        'decrem', 'width': '20px', 'height': 'auto'})
+                      </div>
+                      <div class="controls-value__value"><span>1</span></div>
+                      <div
+                        class="controls-value__btn controls-value__btn--increm"
+                      >
+                        @@include('../page-blocks/_sprite.html', {'id':
+                        'increm', 'width': '14px', 'height': 'auto'})
+                      </div>
+                    </div>
+                    <div>
+                      @@include('../page-blocks/_sprite.html', {'id': 'delete',
+                      'width': '19px', 'height': '19px'})
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-2 d-none d-xl-block spec-bordered">
+                  <div
+                    class="d-flex justify-content-center h-100 align-items-center"
+                  >
+                    <span class="fs-1">400₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container mb-5">
+              <div class="row gy-15">
+                <div class="col-xl-6">
+                  <div class="d-flex gap-15 gap-md-30">
+                    <div>
+                      <img
+                        class="madal-cart__image-select"
+                        src="img/shine2.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="ff-1">
+                      <p class="fs-6 fs-md-4 ff-2">
+                        Отсюда к великому счастью, или как улучшить Вашу жизнь
+                        навсегда!
+                      </p>
+                      <span class="fs-7 fs-md-6">Авторы:</span>
+                      <div
+                        class="d-flex gap-0 gap-md-15 flex-column flex-md-row fs-6 fs-md-5"
+                      >
+                        <span>Джоэл Мари Тойч</span
+                        ><span>Чемпион Курт Тойч</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-2 col-4 spec-bordered">
+                  <div
+                    class="d-flex justify-content-center align-items-center h-100"
+                  >
+                    <div class="box-price">
+                      <span>600₽</span>
+                      <p class="box-price__current-price">400₽</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-2 col-8 spec-bordered">
+                  <div
+                    class="d-flex justify-content-center align-items-center gap-10 h-100"
+                  >
+                    <div class="controls-value controls-value--dark">
+                      <div
+                        class="controls-value__btn controls-value__btn--decrem"
+                      >
+                        @@include('../page-blocks/_sprite.html', {'id':
+                        'decrem', 'width': '20px', 'height': 'auto'})
+                      </div>
+                      <div class="controls-value__value"><span>1</span></div>
+                      <div
+                        class="controls-value__btn controls-value__btn--increm"
+                      >
+                        @@include('../page-blocks/_sprite.html', {'id':
+                        'increm', 'width': '14px', 'height': 'auto'})
+                      </div>
+                    </div>
+                    <div>
+                      @@include('../page-blocks/_sprite.html', {'id': 'delete',
+                      'width': '19px', 'height': '19px'})
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-2 d-none d-xl-block spec-bordered">
+                  <div
+                    class="d-flex justify-content-center h-100 align-items-center"
+                  >
+                    <span class="fs-1">400₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container border-top border-bottom py-15 py-md-25">
+          <div class="row">
+            <div class="col-xl-3">
+              <div class="ff-1">
+                <p>Итого:</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>1 книга на сумму</span>
+                  <div class="box-price">
+                    <p class="box-price__current-price ff-2">400₽</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-9">
+              <div class="row gx-5 gy-10">
+                <div>
+                  <p class="fs-md-5 fs-6 text-center ff-1">
+                    Оставьте свои данные и мы перезвоним вам для уточнения
+                    заказа
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    placeholder="Ваше имя"
+                    class="form-control text-center text-md-start ff-1 rounded-pill py-15 px-20 fs-7 fs-lg-6"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    placeholder="Ваш телефон"
+                    class="form-control text-center text-md-start ff-1 rounded-pill py-15 px-20 fs-7 fs-lg-6"
+                  />
+                </div>
+                <div
+                  class="d-flex gap-15 ff-1 justify-content-between flex-column flex-md-row align-items-center mt-15"
+                >
+                  <p class="mb-0 text-center fs-8 fs-md-6">
+                    Нажимая на кнопку даю согласие на обработку
+                    <a href="#" class="text-decoration-underline">
+                      Персональных данных</a
+                    >
+                  </p>
+                  <div
+                    class="btn btn-dark px-65 py-15 rounded-pill fs-7 text-uppercase"
+                  >
+                    Заказать
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <p class="ff-1 mt-10">Добавить к заказу</p>
+          <div class="container madal-cart__scroller madal-cart__scroller-big">
+            <div class="row gx-10 gy-20 mb-10 mb-md-15">
+              <div class="col-xl-7">
+                <div class="d-flex align-items-center gap-10 gap-md-30">
+                  <label class="modal-checkbox">
+                    <input type="checkbox" name="" id="" />
+                    <div>
+                      @@include('../page-blocks/_sprite.html', {'id': 'select',
+                      'width': '10px', 'height': '8px'})
+                    </div>
+                  </label>
+                  <div class="madal-cart__inner-img-suggest">
+                    <img
+                      class="madal-cart__img-suggest"
+                      src="img/shine2.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div>
+                    <span class="ff-1 text-muted fs-7">Чемпион Курт Тойч</span>
+                    <p class="mb-0">
+                      Духовный интеллект. Ключ к человеческой эффективности
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-5">
+                <div
+                  class="d-flex justify-content-center align-items-center h-100"
+                >
+                  <div class="box-price">
+                    <span class="fs-6">600₽</span>
+                    <p class="box-price__current-price fs-4">400₽</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-4">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-10 h-100"
+                >
+                  <div class="controls-value controls-value--dark">
+                    <div
+                      class="controls-value__btn controls-value__btn--decrem"
+                    >
+                      <svg style="width: 20px; height: auto">
+                        <use xlink:href="img/sprite.svg#decrem"></use>
+                      </svg>
+                    </div>
+                    <div class="controls-value__value"><span>1</span></div>
+                    <div
+                      class="controls-value__btn controls-value__btn--increm"
+                    >
+                      <svg style="width: 14px; height: auto">
+                        <use xlink:href="img/sprite.svg#increm"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-3">
+                <div
+                  class="d-flex justify-content-center align-items-center h-100"
+                >
+                  <div class="button-cards ff-1">
+                    <span>Добавить к заказу</span>
+                    @@include('../page-blocks/_sprite.html', {'id': 'cart',
+                    'width': '14px', 'height': '18px'})
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row gx-10 gy-20 mb-10 mb-md-15">
+              <div class="col-xl-7">
+                <div class="d-flex align-items-center gap-10 gap-md-30">
+                  <label class="modal-checkbox">
+                    <input type="checkbox" name="" id="" />
+                    <div>
+                      @@include('../page-blocks/_sprite.html', {'id': 'select',
+                      'width': '10px', 'height': '8px'})
+                    </div>
+                  </label>
+                  <div class="madal-cart__inner-img-suggest">
+                    <img
+                      class="madal-cart__img-suggest"
+                      src="img/shine3.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div>
+                    <span class="ff-1 text-muted fs-7">Чемпион Курт Тойч</span>
+                    <p class="mb-0">
+                      Духовный интеллект. Ключ к человеческой эффективности
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-5">
+                <div
+                  class="d-flex justify-content-center align-items-center h-100"
+                >
+                  <div class="box-price">
+                    <span class="fs-6">600₽</span>
+                    <p class="box-price__current-price fs-4">400₽</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-4">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-10 h-100"
+                >
+                  <div class="controls-value controls-value--dark">
+                    <div
+                      class="controls-value__btn controls-value__btn--decrem"
+                    >
+                      <svg style="width: 20px; height: auto">
+                        <use xlink:href="img/sprite.svg#decrem"></use>
+                      </svg>
+                    </div>
+                    <div class="controls-value__value"><span>1</span></div>
+                    <div
+                      class="controls-value__btn controls-value__btn--increm"
+                    >
+                      <svg style="width: 14px; height: auto">
+                        <use xlink:href="img/sprite.svg#increm"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-3">
+                <div
+                  class="d-flex justify-content-center align-items-center h-100"
+                >
+                  <div class="button-cards ff-1">
+                    <span>Добавить к заказу</span>
+                    @@include('../page-blocks/_sprite.html', {'id': 'cart',
+                    'width': '14px', 'height': '18px'})
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row gx-10 gy-20 mb-10 mb-md-15">
+              <div class="col-xl-7">
+                <div class="d-flex align-items-center gap-10 gap-md-30">
+                  <label class="modal-checkbox">
+                    <input type="checkbox" name="" id="" />
+                    <div>
+                      @@include('../page-blocks/_sprite.html', {'id': 'select',
+                      'width': '10px', 'height': '8px'})
+                    </div>
+                  </label>
+                  <div class="madal-cart__inner-img-suggest">
+                    <img
+                      class="madal-cart__img-suggest"
+                      src="img/shine4.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div>
+                    <span class="ff-1 text-muted fs-7">Чемпион Курт Тойч</span>
+                    <p class="mb-0">
+                      Духовный интеллект. Ключ к человеческой эффективности
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-5">
+                <div
+                  class="d-flex justify-content-center align-items-center h-100"
+                >
+                  <div class="box-price">
+                    <span class="fs-6">600₽</span>
+                    <p class="box-price__current-price fs-4">400₽</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-4">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-10 h-100"
+                >
+                  <div class="controls-value controls-value--dark">
+                    <div
+                      class="controls-value__btn controls-value__btn--decrem"
+                    >
+                      <svg style="width: 20px; height: auto">
+                        <use xlink:href="img/sprite.svg#decrem"></use>
+                      </svg>
+                    </div>
+                    <div class="controls-value__value"><span>1</span></div>
+                    <div
+                      class="controls-value__btn controls-value__btn--increm"
+                    >
+                      <svg style="width: 14px; height: auto">
+                        <use xlink:href="img/sprite.svg#increm"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-3">
+                <div
+                  class="d-flex justify-content-center align-items-center h-100"
+                >
+                  <div class="button-cards ff-1">
+                    <span>Добавить к заказу</span>
+                    @@include('../page-blocks/_sprite.html', {'id': 'cart',
+                    'width': '14px', 'height': '18px'})
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row gx-10 gy-20 mb-10 mb-md-15">
+              <div class="col-xl-7">
+                <div class="d-flex align-items-center gap-10 gap-md-30">
+                  <label class="modal-checkbox">
+                    <input type="checkbox" name="" id="" />
+                    <div>
+                      @@include('../page-blocks/_sprite.html', {'id': 'select',
+                      'width': '10px', 'height': '8px'})
+                    </div>
+                  </label>
+                  <div class="madal-cart__inner-img-suggest">
+                    <img
+                      class="madal-cart__img-suggest"
+                      src="img/shine5.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div>
+                    <span class="ff-1 text-muted fs-7">Чемпион Курт Тойч</span>
+                    <p class="mb-0">
+                      Духовный интеллект. Ключ к человеческой эффективности
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-5">
+                <div
+                  class="d-flex justify-content-center align-items-center h-100"
+                >
+                  <div class="box-price">
+                    <span class="fs-6">600₽</span>
+                    <p class="box-price__current-price fs-4">400₽</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-4">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-10 h-100"
+                >
+                  <div class="controls-value controls-value--dark">
+                    <div
+                      class="controls-value__btn controls-value__btn--decrem"
+                    >
+                      <svg style="width: 20px; height: auto">
+                        <use xlink:href="img/sprite.svg#decrem"></use>
+                      </svg>
+                    </div>
+                    <div class="controls-value__value"><span>1</span></div>
+                    <div
+                      class="controls-value__btn controls-value__btn--increm"
+                    >
+                      <svg style="width: 14px; height: auto">
+                        <use xlink:href="img/sprite.svg#increm"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-3">
+                <div
+                  class="d-flex justify-content-center align-items-center h-100"
+                >
+                  <div class="button-cards ff-1">
+                    <span>Добавить к заказу</span>
+                    @@include('../page-blocks/_sprite.html', {'id': 'cart',
+                    'width': '14px', 'height': '18px'})
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row gx-10 gy-20 mb-10 mb-md-15">
+              <div class="col-xl-7">
+                <div class="d-flex align-items-center gap-10 gap-md-30">
+                  <label class="modal-checkbox">
+                    <input type="checkbox" name="" id="" />
+                    <div>
+                      @@include('../page-blocks/_sprite.html', {'id': 'select',
+                      'width': '10px', 'height': '8px'})
+                    </div>
+                  </label>
+                  <div class="madal-cart__inner-img-suggest">
+                    <img
+                      class="madal-cart__img-suggest"
+                      src="img/shine6.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div>
+                    <span class="ff-1 text-muted fs-7">Чемпион Курт Тойч</span>
+                    <p class="mb-0">
+                      Духовный интеллект. Ключ к человеческой эффективности
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-5">
+                <div
+                  class="d-flex justify-content-center align-items-center h-100"
+                >
+                  <div class="box-price">
+                    <span class="fs-6">600₽</span>
+                    <p class="box-price__current-price fs-4">400₽</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-4">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-10 h-100"
+                >
+                  <div class="controls-value controls-value--dark">
+                    <div
+                      class="controls-value__btn controls-value__btn--decrem"
+                    >
+                      <svg style="width: 20px; height: auto">
+                        <use xlink:href="img/sprite.svg#decrem"></use>
+                      </svg>
+                    </div>
+                    <div class="controls-value__value"><span>1</span></div>
+                    <div
+                      class="controls-value__btn controls-value__btn--increm"
+                    >
+                      <svg style="width: 14px; height: auto">
+                        <use xlink:href="img/sprite.svg#increm"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-3">
+                <div
+                  class="d-flex justify-content-center align-items-center h-100"
+                >
+                  <div class="button-cards ff-1">
+                    <span>Добавить к заказу</span>
+                    @@include('../page-blocks/_sprite.html', {'id': 'cart',
+                    'width': '14px', 'height': '18px'})
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row gx-10 gy-20 mb-10 mb-md-15">
+              <div class="col-xl-7">
+                <div class="d-flex align-items-center gap-10 gap-md-30">
+                  <label class="modal-checkbox">
+                    <input type="checkbox" name="" id="" />
+                    <div>
+                      @@include('../page-blocks/_sprite.html', {'id': 'select',
+                      'width': '10px', 'height': '8px'})
+                    </div>
+                  </label>
+                  <div class="madal-cart__inner-img-suggest">
+                    <img
+                      class="madal-cart__img-suggest"
+                      src="img/shine2.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div>
+                    <span class="ff-1 text-muted fs-7">Чемпион Курт Тойч</span>
+                    <p class="mb-0">
+                      Духовный интеллект. Ключ к человеческой эффективности
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-5">
+                <div
+                  class="d-flex justify-content-center align-items-center h-100"
+                >
+                  <div class="box-price">
+                    <span class="fs-6">600₽</span>
+                    <p class="box-price__current-price fs-4">400₽</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-4">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-10 h-100"
+                >
+                  <div class="controls-value controls-value--dark">
+                    <div
+                      class="controls-value__btn controls-value__btn--decrem"
+                    >
+                      <svg style="width: 20px; height: auto">
+                        <use xlink:href="img/sprite.svg#decrem"></use>
+                      </svg>
+                    </div>
+                    <div class="controls-value__value"><span>1</span></div>
+                    <div
+                      class="controls-value__btn controls-value__btn--increm"
+                    >
+                      <svg style="width: 14px; height: auto">
+                        <use xlink:href="img/sprite.svg#increm"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-3">
+                <div
+                  class="d-flex justify-content-center align-items-center h-100"
+                >
+                  <div class="button-cards ff-1">
+                    <span>Добавить к заказу</span>
+                    @@include('../page-blocks/_sprite.html', {'id': 'cart',
+                    'width': '14px', 'height': '18px'})
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row gx-10 gy-20 mb-10 mb-md-15">
+              <div class="col-xl-7">
+                <div class="d-flex align-items-center gap-10 gap-md-30">
+                  <label class="modal-checkbox">
+                    <input type="checkbox" name="" id="" />
+                    <div>
+                      @@include('../page-blocks/_sprite.html', {'id': 'select',
+                      'width': '10px', 'height': '8px'})
+                    </div>
+                  </label>
+                  <div class="madal-cart__inner-img-suggest">
+                    <img
+                      class="madal-cart__img-suggest"
+                      src="img/shine3.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div>
+                    <span class="ff-1 text-muted fs-7">Чемпион Курт Тойч</span>
+                    <p class="mb-0">
+                      Духовный интеллект. Ключ к человеческой эффективности
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-5">
+                <div
+                  class="d-flex justify-content-center align-items-center h-100"
+                >
+                  <div class="box-price">
+                    <span class="fs-6">600₽</span>
+                    <p class="box-price__current-price fs-4">400₽</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-4">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-10 h-100"
+                >
+                  <div class="controls-value controls-value--dark">
+                    <div
+                      class="controls-value__btn controls-value__btn--decrem"
+                    >
+                      <svg style="width: 20px; height: auto">
+                        <use xlink:href="img/sprite.svg#decrem"></use>
+                      </svg>
+                    </div>
+                    <div class="controls-value__value"><span>1</span></div>
+                    <div
+                      class="controls-value__btn controls-value__btn--increm"
+                    >
+                      <svg style="width: 14px; height: auto">
+                        <use xlink:href="img/sprite.svg#increm"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-3">
+                <div
+                  class="d-flex justify-content-center align-items-center h-100"
+                >
+                  <div class="button-cards ff-1">
+                    <span>Добавить к заказу</span>
+                    @@include('../page-blocks/_sprite.html', {'id': 'cart',
+                    'width': '14px', 'height': '18px'})
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row gx-10 gy-20 mb-10 mb-md-15">
+              <div class="col-xl-7">
+                <div class="d-flex align-items-center gap-10 gap-md-30">
+                  <label class="modal-checkbox">
+                    <input type="checkbox" name="" id="" />
+                    <div>
+                      @@include('../page-blocks/_sprite.html', {'id': 'select',
+                      'width': '10px', 'height': '8px'})
+                    </div>
+                  </label>
+                  <div class="madal-cart__inner-img-suggest">
+                    <img
+                      class="madal-cart__img-suggest"
+                      src="img/shine4.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div>
+                    <span class="ff-1 text-muted fs-7">Чемпион Курт Тойч</span>
+                    <p class="mb-0">
+                      Духовный интеллект. Ключ к человеческой эффективности
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-5">
+                <div
+                  class="d-flex justify-content-center align-items-center h-100"
+                >
+                  <div class="box-price">
+                    <span class="fs-6">600₽</span>
+                    <p class="box-price__current-price fs-4">400₽</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-4">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-10 h-100"
+                >
+                  <div class="controls-value controls-value--dark">
+                    <div
+                      class="controls-value__btn controls-value__btn--decrem"
+                    >
+                      <svg style="width: 20px; height: auto">
+                        <use xlink:href="img/sprite.svg#decrem"></use>
+                      </svg>
+                    </div>
+                    <div class="controls-value__value"><span>1</span></div>
+                    <div
+                      class="controls-value__btn controls-value__btn--increm"
+                    >
+                      <svg style="width: 14px; height: auto">
+                        <use xlink:href="img/sprite.svg#increm"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-3">
+                <div
+                  class="d-flex justify-content-center align-items-center h-100"
+                >
+                  <div class="button-cards ff-1">
+                    <span>Добавить к заказу</span>
+                    @@include('../page-blocks/_sprite.html', {'id': 'cart',
+                    'width': '14px', 'height': '18px'})
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row gx-10 gy-20 mb-10 mb-md-15">
+              <div class="col-xl-7">
+                <div class="d-flex align-items-center gap-10 gap-md-30">
+                  <label class="modal-checkbox">
+                    <input type="checkbox" name="" id="" />
+                    <div>
+                      @@include('../page-blocks/_sprite.html', {'id': 'select',
+                      'width': '10px', 'height': '8px'})
+                    </div>
+                  </label>
+                  <div class="madal-cart__inner-img-suggest">
+                    <img
+                      class="madal-cart__img-suggest"
+                      src="img/shine5.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div>
+                    <span class="ff-1 text-muted fs-7">Чемпион Курт Тойч</span>
+                    <p class="mb-0">
+                      Духовный интеллект. Ключ к человеческой эффективности
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-5">
+                <div
+                  class="d-flex justify-content-center align-items-center h-100"
+                >
+                  <div class="box-price">
+                    <span class="fs-6">600₽</span>
+                    <p class="box-price__current-price fs-4">400₽</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-4">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-10 h-100"
+                >
+                  <div class="controls-value controls-value--dark">
+                    <div
+                      class="controls-value__btn controls-value__btn--decrem"
+                    >
+                      <svg style="width: 20px; height: auto">
+                        <use xlink:href="img/sprite.svg#decrem"></use>
+                      </svg>
+                    </div>
+                    <div class="controls-value__value"><span>1</span></div>
+                    <div
+                      class="controls-value__btn controls-value__btn--increm"
+                    >
+                      <svg style="width: 14px; height: auto">
+                        <use xlink:href="img/sprite.svg#increm"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-3">
+                <div
+                  class="d-flex justify-content-center align-items-center h-100"
+                >
+                  <div class="button-cards ff-1">
+                    <span>Добавить к заказу</span>
+                    @@include('../page-blocks/_sprite.html', {'id': 'cart',
+                    'width': '14px', 'height': '18px'})
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  
+
+  
 </div>
+
+
+<div
+    class="modal fade madal-cart"
+    id="modal-into-book"
+    tabindex="-1"
+    aria-labelledby="modal-into-book"
+    aria-hidden="false"
+  >
+    <!--  -->
+    <div class="modal-dialog modal-dialog-centered modal-xl mt-50">
+      <div class="modal-content bg-white p-20 position-relative">
+        <div
+          style="
+            top: -35px;
+            right: 0;
+            position: absolute;
+            width: 65px;
+            height: 65px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          "
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          @@include('../page-blocks/_sprite.html', {'id': 'delete', 'width':
+          '19px', 'height': '19px'})
+        </div>
+
+        <div class="mt-10">
+          <div class="container">
+            <div class="content-book-block">
+              <div class="content-book-block__float-face">
+                <img class="wp-100" src="img/shine.png" alt="" />
+              </div>
+
+              <div class="content-book-block__inner-slider">
+                <div
+                  class="content-book-slider overflow-hidden swiper-slider h-100"
+                >
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide h-100">
+                      <div class="content-book-block__inner-image">
+                        <img class="wp-100" src="img/bookse.png" alt="" />
+                      </div>
+                      <div class="content-book-slider__text">
+                        <div>
+                          <p class="ff-1">
+                            "Просите и получите!" - Клише? Религиозная
+                            банальность? Нет. Эта книга расшифровывает истинное
+                            значение этих слов. Применяя на практике изложенные
+                            в этой книге принципы, можно достичь счастья,
+                            совершенного здоровья и процветания, как это уже
+                            сделали сотни тысяч людей в России и других странах.
+                            Книга экстремально интересна и полезна всем, кто
+                            стремится к благополучию, успеху, счастью и
+                            процветанию и ищет средства достижения этого.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide h-100">
+                      <div class="content-book-block__inner-image">
+                        <img class="wp-100" src="img/bookse.png" alt="" />
+                      </div>
+                      <div class="content-book-slider__text">
+                        <div>
+                          <p class="ff-1">
+                            "Просите и получите!" - Клише? Религиозная
+                            банальность? Нет. Эта книга расшифровывает истинное
+                            значение этих слов. Применяя на практике изложенные
+                            в этой книге принципы, можно достичь счастья,
+                            совершенного здоровья и процветания, как это уже
+                            сделали сотни тысяч людей в России и других странах.
+                            Книга экстремально интересна и полезна всем, кто
+                            стремится к благополучию, успеху, счастью и
+                            процветанию и ищет средства достижения этого.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mx-auto" style="max-width: 530px">
+                  <div class="slider-box-controls justify-content-center mt-30">
+                    <div class="slider-btn-prev content-book-slider-prev">
+                      @@include('../page-blocks/_sprite.html', {'id':
+                      'arrow-prev', 'width': '45px', 'height': '15px'})
+                    </div>
+                    <div class="slider-btn-next content-book-slider-next">
+                      @@include('../page-blocks/_sprite.html', {'id':
+                      'arrow-next', 'width': '45px', 'height': '15px'})
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
 <div
-  class="modal fade"
-  id="modal-call"
-  tabindex="-1"
-  aria-labelledby="modal-call"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content bg-primary py-30 px-20">
-      <div
-        type="button"
-        class="btn-close text-white position-absolute"
-        style="top: 15px; right: 15px"
-        data-bs-dismiss="modal"
-        aria-label="Close"
-      ></div>
+    class="modal fade"
+    id="modal-news"
+    tabindex="-1"
+    aria-labelledby="modal-map"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-xl mt-50">
+      <div class="modal-content bg-white p-20 position-relative">
+        <div
+          style="
+            top: -35px;
+            right: 0;
+            position: absolute;
+            width: 65px;
+            height: 65px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          "
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          @@include('../page-blocks/_sprite.html', {'id': 'delete', 'width':
+          '19px', 'height': '19px'})
+        </div>
 
-      <div class="text-center text-white">
-        <p class="fs-lg-special-size text-uppercase mb-20">Обратный звонок</p>
-        <input
-          type="text"
-          class="form-control py-10 px-20 mb-10"
-          placeholder="Введите ваше имя"
-        />
-        <input
-          type="text"
-          class="form-control py-10 px-20 mb-10"
-          placeholder="Введите ваш телефон"
-        />
-        <input
-          type="text"
-          class="form-control py-10 px-20 mb-10 "
-          placeholder="Введите ваш телефон"
-        />
-        <textarea class="form-control py-10 px-20 " style="height: 100px;"
-        placeholder="Введите ваш телефон"></textarea>
-        
-        <span class="text-muted fs-8">Заполните обязательные поля</span>
-        <p class="fw-light">
-            При нажатии на кнопку, Вы даете согласие на обработку Персональных данных.
-        </p>
-        <div class="mt-30 d-flex">
-          <div class="btn btn-light wp-100 text-uppercase fs-5 py-15">Перезвоните мне!</div>
+        <div class="d-flex gap-30">
+          <div class="d-flex flex-column align-items-center">
+            <p class="fs-4">28</p>
+            <span class="ff-1 fs-6">ноября</span>
+          </div>
+          <h3 class="fs-2">
+            Ясность нашей позиции очевидна: дальнейшее развитие.
+          </h3>
+        </div>
+        <div class="mt-30">
+          <img
+            class="float-start me-20"
+            style="width: 100%; max-width: 460px"
+            src="img/IMAGE.png"
+            alt=""
+          />
+          <p class="mt-20">
+            В частности, понимание сути ресурсосберегающих технологий
+            способствует повышению качества как самодостаточных, так и внешне
+            зависимых концептуальных решений. Значимость этих проблем настолько
+            очевидна, что высокое качество позиционных исследований прекрасно
+            подходит для реализации экономической целесообразности принимаемых
+            решений. В целом, конечно, глубокий уровень погружения напрямую
+            зависит от анализа существующих паттернов поведения. Мы вынуждены
+            отталкиваться от того, что разбавленное изрядной долей эмпатии,
+            рациональное мышление предполагает независимые способы реализации
+            новых предложений. Для современного мира сложившаяся структура
+            организации обеспечивает широкому кругу (специалистов) участие в
+            формировании анализа существующих паттернов поведения. Современные
+            технологии достигли такого уровня, что внедрение современных методик
+            требует определения и уточнения кластеризации усилий. Таким образом,
+            высокое качество позиционных исследований, а также свежий взгляд на
+            привычные вещи — безусловно открывает новые горизонты для дальнейших
+            направлений развития. Разнообразный и богатый опыт говорит нам, что
+            семантический разбор внешних противодействий требует анализа вывода
+            текущих активов. Кстати, ключевые особенности структуры проекта
+            набирают популярность среди определенных слоев населения, а значит,
+            должны быть описаны максимально подробно. Современные технологии
+            достигли такого уровня, что консультация с широким активом создаёт
+            предпосылки для экономической целесообразности принимаемых решений.
+          </p>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-
-
-<div
-  class="modal fade"
-  id="modal-kp"
-  tabindex="-1"
-  aria-labelledby="modal-kp"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content bg-primary py-30 px-20">
-      <div
-        type="button"
-        class="btn-close text-white position-absolute"
-        style="top: 15px; right: 15px"
-        data-bs-dismiss="modal"
-        aria-label="Close"
-      ></div>
-
-      <div class="text-center text-white">
-        <p class="fs-lg-special-size text-uppercase mb-20">Обратный звонок</p>
-        <input
-          type="text"
-          class="form-control py-10 px-20 mb-10"
-          placeholder="Введите ваше имя"
-        />
-        <input
-          type="text"
-          class="form-control py-10 px-20 mb-10"
-          placeholder="Введите ваш телефон"
-        />
-        <input
-          type="text"
-          class="form-control py-10 px-20 mb-10 "
-          placeholder="Введите ваш телефон"
-        />
-        <textarea class="form-control py-10 px-20 " style="height: 100px;"
-        placeholder="Введите ваш телефон"></textarea>
-        
-        <span class="text-muted fs-8">Заполните обязательные поля</span>
-        <p class="fw-light">
-            При нажатии на кнопку, Вы даете согласие на обработку Персональных данных.
-        </p>
-        <div class="mt-30 d-flex">
-          <div class="btn btn-light wp-100 text-uppercase fs-5 py-15">Перезвоните мне!</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
