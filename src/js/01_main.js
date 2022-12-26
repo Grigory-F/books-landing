@@ -1,3 +1,8 @@
+new AgelarPhoneValidator({
+  inputSelector: ".input-phone",
+  submitSelector: ".validator-submit",
+});
+
 let booksButton = document.querySelectorAll(".button-book");
 let booksButtonHideCont = document.querySelectorAll(".books-card__hide-cont");
 let closeBookButton = document.querySelectorAll(".close-books-card");
@@ -61,8 +66,6 @@ sidebarClose.addEventListener("click", () => {
 document.querySelectorAll(".madal-cart__scroller").forEach((elem, index) => {
   new SimpleBar(elem);
 });
-
-
 
 document.querySelectorAll(".books-card__scroll-box").forEach((elem, index) => {
   new SimpleBar(elem);
@@ -155,9 +158,7 @@ const contentBookSlider = new Swiper(".content-book-slider", {
     prevEl: ".content-book-slider-prev",
   },
   grabCursor: true,
-  
 });
-
 
 const contentBookBtnSlider = new Swiper(".content-book-btn-slider", {
   slidesPerView: "auto",
@@ -183,7 +184,6 @@ const topSectionSlider = new Swiper(".top-section-slider", {
     prevEl: ".top-section-slider-prev",
   },
   grabCursor: true,
-  
 });
 
 const reviewsVideo = new Swiper(".reviews-video-slider", {
@@ -238,7 +238,6 @@ class Parallax {
     });
   }
   _init() {
-    console.log(this.wrapper, this.layers);
 
     this.wrapper.addEventListener("mousemove", (e) => {
       this.calculateParallax(e);

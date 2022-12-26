@@ -1,7 +1,8 @@
 const plugins = [
   "node_modules/swiper/swiper-bundle.min.js",
   "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
-  "node_modules/simplebar/dist/simplebar.min.js"
+  "node_modules/simplebar/dist/simplebar.min.js",
+  "src/js-libs/ParsePhone.js",
 ];
 const { src, dest } = require("gulp");
 const uglify = require("gulp-uglify-es").default;
