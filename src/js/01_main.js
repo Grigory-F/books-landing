@@ -183,14 +183,7 @@ const topSectionSlider = new Swiper(".top-section-slider", {
     prevEl: ".top-section-slider-prev",
   },
   grabCursor: true,
-  breakpoints: {
-    320: {
-      spaceBetween: 15,
-    },
-    768: {
-      spaceBetween: 30,
-    },
-  },
+  
 });
 
 const reviewsVideo = new Swiper(".reviews-video-slider", {
